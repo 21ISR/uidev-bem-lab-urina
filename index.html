@@ -13,39 +13,57 @@
     </head>
     <body>
         <!-- НАВИГАЦИЯ -->
-        <nav class="zX9">
-            <div class="q1">
+        <nav class="header">
+            <div class="logo">
                 ЗВУ
-                <span>К</span>
+                <span class="logo__accent">К</span>
             </div>
-            <ul class="r77">
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">Преподаватели</a></li>
-                <li><a href="#">Цены</a></li>
-                <li><a href="#">О нас</a></li>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Курсы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Преподаватели</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Цены</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О нас</a>
+                </li>
             </ul>
-            <button class="btn99">Начать бесплатно</button>
+            <button class="button button--primary">
+                Начать бесплатно
+            </button>
         </nav>
 
         <!-- HERO-СЕКЦИЯ -->
-        <section class="aaa">
-            <div class="txt_blk">
-                <span class="tag1">Музыкальная школа нового поколения</span>
-                <h1>
+        <section class="hero">
+            <div class="hero__content">
+                <span class="hero__tag">
+                    Музыкальная школа нового поколения
+                </span>
+                <h1 class="hero__title">
                     Учись играть
-                    <span class="red_w">так, как чувствуешь.</span>
+                    <span class="hero__title-accent">
+                        так, как чувствуешь.
+                    </span>
                 </h1>
-                <p class="sub99">
+                <p class="hero__description">
                     Онлайн-курсы по гитаре, фортепиано, вокалу и звукозаписи.
                     Живые уроки с профессионалами, гибкий график и сообщество из
                     12 000 музыкантов.
                 </p>
-                <div class="btns_wr">
-                    <button class="main_b">Выбрать курс</button>
-                    <button class="sec_b">Смотреть демо ▶</button>
+                <div class="hero__actions">
+                    <button class="button button--primary">
+                        Выбрать курс
+                    </button>
+                    <button class="button button--secondary">
+                        Смотреть демо ▶
+                    </button>
                 </div>
             </div>
-            <div class="big_num">♪</div>
+            <div class="hero__symbol">♪</div>
         </section>
 
         <!-- ВОЛНОВАЯ ДЕКОРАЦИЯ -->
@@ -93,140 +111,154 @@
         </div>
 
         <!-- СТАТИСТИКА -->
-        <div class="sTaT">
-            <div class="s_item">
-                <span class="bignumb">12K+</span>
-                <span class="smallt">Студентов</span>
+        <div class="stats">
+            <div class="stats_item">
+                <span class="stats__value">12K+</span>
+                <span class="stats__label">Студентов</span>
             </div>
-            <div class="s_item">
-                <span class="bignumb">48</span>
-                <span class="smallt">Курсов</span>
+            <div class="stats_item">
+                <span class="stats__value">48</span>
+                <span class="stats__label">Курсов</span>
             </div>
-            <div class="s_item">
-                <span class="bignumb">96%</span>
-                <span class="smallt">Довольны результатом</span>
+            <div class="stats_item">
+                <span class="stats__value">96%</span>
+                <span class="stats__label">Довольны результатом</span>
             </div>
-            <div class="s_item">
-                <span class="bignumb">6 лет</span>
-                <span class="smallt">На рынке</span>
+            <div class="stats_item">
+                <span class="stats__value">6 лет</span>
+                <span class="stats__label">На рынке</span>
             </div>
         </div>
 
         <!-- КУРСЫ -->
-        <section class="CcC">
-            <div class="sec_head">
-                <h2 class="sec_ttl">
+        <section class="courses">
+            <div class="courses__header">
+                <h2 class="courses__title">
                     Наши
-                    <span>курсы</span>
+                    <span class="courses__title-accent">курсы</span>
                 </h2>
-                <a href="#" class="lnk1">Все курсы →</a>
+                <a href="#" class="courses__link">Все курсы →</a>
             </div>
-            <div class="gr1">
-                <div class="crd">
-                    <div class="ico_w">🎸</div>
-                    <div class="crd_t">Электрогитара</div>
-                    <p class="crd_d">
+            <div class="courses__grid">
+                <div class="course-card">
+                    <div class="course-card__icon">🎸</div>
+                    <div class="course-card__title">Электрогитара</div>
+                    <p class="course-card__description">
                         От основ до сложных техник: пентатоника, легато, тэппинг
                         и импровизация в разных стилях музыки.
                     </p>
-                    <div class="crd_meta">
-                        <span class="lvl">Начинающий → Средний</span>
-                        <span class="pr">3 900 ₽/мес</span>
+                    <div class="course-card__meta">
+                        <span class="course-card__level">
+                            Начинающий → Средний
+                        </span>
+                        <span class="course-card__price">
+                            3 900 ₽/мес
+                        </span>
                     </div>
                 </div>
-                <div class="crd">
-                    <div class="ico_w">🎹</div>
-                    <div class="crd_t">Фортепиано</div>
-                    <p class="crd_d">
+                <div class="course-card">
+                    <div class="course-card__icon">🎹</div>
+                    <div class="course-card__title">Фортепиано</div>
+                    <p class="course-card__description">
                         Классика, джаз и современные направления. Постановка
                         рук, чтение нот и гармония — всё с нуля.
                     </p>
-                    <div class="crd_meta">
-                        <span class="lvl">Любой уровень</span>
-                        <span class="pr">4 200 ₽/мес</span>
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Любой уровень</span>
+                        <span class="course-card__price">4 200 ₽/мес</span>
                     </div>
                 </div>
-                <div class="crd">
-                    <div class="ico_w">🎤</div>
-                    <div class="crd_t">Вокал</div>
-                    <p class="crd_d">
+                <div class="course-card">
+                    <div class="course-card__icon">🎤</div>
+                    <div class="course-card__title">Вокал</div>
+                    <p class="course-card__description">
                         Развитие голоса, дыхание, диапазон и сценическое
                         присутствие. Работаем в эстраде и поп-музыке.
                     </p>
-                    <div class="crd_meta">
-                        <span class="lvl">С нуля</span>
-                        <span class="pr">3 500 ₽/мес</span>
+                    <div class="course-card__meta">
+                        <span class="course-card__level">С нуля</span>
+                        <span class="course-card__price">3 500 ₽/мес</span>
                     </div>
                 </div>
-                <div class="crd">
-                    <div class="ico_w">🥁</div>
-                    <div class="crd_t">Барабаны</div>
-                    <p class="crd_d">
+                <div class="course-card">
+                    <div class="course-card__icon">🥁</div>
+                    <div class="course-card__title">Барабаны</div>
+                    <p class="course-card__description">
                         Ритм, координация, грувы и паттерны. От рок-ударных до
                         джазовых свингов и электронных стилей.
                     </p>
-                    <div class="crd_meta">
-                        <span class="lvl">Начинающий</span>
-                        <span class="pr">3 700 ₽/мес</span>
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Начинающий</span>
+                        <span class="course-card__price">3 700 ₽/мес</span>
                     </div>
                 </div>
-                <div class="crd">
-                    <div class="ico_w">🎛️</div>
-                    <div class="crd_t">Звукозапись</div>
-                    <p class="crd_d">
+                <div class="course-card">
+                    <div class="course-card__icon">🎛️</div>
+                    <div class="course-card__title">Звукозапись</div>
+                    <p class="course-card__description">
                         DAW, сведение, мастеринг и работа с эффектами. Создавай
                         профессиональные треки у себя дома.
                     </p>
-                    <div class="crd_meta">
-                        <span class="lvl">Средний → Продвинутый</span>
-                        <span class="pr">5 100 ₽/мес</span>
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Средний → Продвинутый</span>
+                        <span class="course-card__price">5 100 ₽/мес</span>
                     </div>
                 </div>
-                <div class="crd">
-                    <div class="ico_w">🎻</div>
-                    <div class="crd_t">Скрипка</div>
-                    <p class="crd_d">
+                <div class="course-card">
+                    <div class="course-card__icon">🎻</div>
+                    <div class="course-card__title">Скрипка</div>
+                    <p class="course-card__description">
                         Классическая постановка, интонация и работа со смычком.
                         Репертуар от Баха до современных аранжировок.
                     </p>
-                    <div class="crd_meta">
-                        <span class="lvl">Начинающий</span>
-                        <span class="pr">4 500 ₽/мес</span>
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Начинающий</span>
+                        <span class="course-card__price">4 500 ₽/мес</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- FEATURED БЛОК -->
-        <div class="FtFt">
-            <div class="left_p">
-                <div class="bigq">
+        <div class="featured">
+            <div class="featured__quote-block">
+                <div class="featured__quote">
                     «Впервые в жизни я написал свою песню — и сделал это уже на
                     третьем месяце обучения.»
                 </div>
-                <div class="auth_r">
-                    <div class="ava">🧑</div>
-                    <div class="auth_inf">
-                        <div class="auth_nm">Артём Власов</div>
-                        <div class="auth_pos">
+                <div class="featured__author">
+                    <div class="featured__avatar">🧑</div>
+                    <div class="featured__author-info">
+                        <div class="featured__author-name">Артём Власов</div>
+                        <div class="featured__author-positions">
                             Курс «Электрогитара», г. Москва
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right_p">
-                <div class="r_tag">Почему выбирают нас</div>
-                <h3>Больше чем просто уроки</h3>
-                <p>
+            <div class="featured__content">
+                <div class="featured__tag">Почему выбирают нас</div>
+                <h3 class="featured__title">Больше чем просто уроки</h3>
+                <p class="featured__description">
                     Мы создали экосистему, где каждый студент растёт быстро и не
                     бросает занятия на полпути.
                 </p>
-                <ul class="list_f">
-                    <li>Живые уроки с преподавателем 2 раза в неделю</li>
-                    <li>Персональный план обучения с первого дня</li>
-                    <li>Закрытое сообщество и разборы треков</li>
-                    <li>Запись всех уроков — смотри в любое время</li>
-                    <li>Сертификат по окончании курса</li>
+                <ul class="featured__list">
+                    <li class="featured__list-item"
+                    >Живые уроки с преподавателем 2 раза в неделю
+                    </li>
+                    <li class="featured__list-item">
+                        Персональный план обучения с первого дня
+                    </li>
+                    <li class="featured__list-item">
+                        Закрытое сообщество и разборы треков
+                    </li>
+                    <li class="featured__list-item">
+                        Запись всех уроков — смотри в любое время
+                    </li>
+                    <li class="featured__list-item">
+                        Сертификат по окончании курса
+                    </li>
                 </ul>
             </div>
         </div>
